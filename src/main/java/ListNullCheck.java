@@ -9,8 +9,9 @@ public class ListNullCheck {
         List<String> stringList = new ArrayList<>();
         stringList.add("ele1");
         stringList.add("ele2");
-        if(stringList != null && !stringList.isEmpty()){
-            System.out.println(stringList.get(0));
+        if(stringList != null){
+          for(String element:stringList)
+              System.out.println(element);
         }
     }
 }

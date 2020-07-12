@@ -10,7 +10,7 @@ public class MapNullCheck {
     public static void main(String args[]){
         Map<String,String> testMap = new HashMap<>();
         testMap.put("first_key","first_val");
-        if(testMap.containsKey("first_key")){
+        if(testMap!=null && testMap.containsKey("first_key")){
             System.out.println(testMap.get("first_key"));
         }
         else{

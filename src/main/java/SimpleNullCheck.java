@@ -9,9 +9,8 @@ public class SimpleNullCheck {
     }
 
     private static void simpleNullCheck(String str1) {
-        String str2 = str1;
-        if(str2 != null){
-            System.out.println(str2.length());
+        if(str1 != null){
+            System.out.println(str1.length());
         }else{
             System.out.println("String is null");
         }
